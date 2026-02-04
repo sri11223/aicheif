@@ -18,6 +18,15 @@ a {
   text-decoration: none;
 }
 
+.ghost {
+  background: #ffffff;
+  border: 1px solid #cbd5f5;
+  color: #2563eb;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
 .dashboard {
   max-width: 1200px;
   margin: 0 auto;
@@ -190,6 +199,65 @@ a {
 .metric-value {
   margin: 4px 0 0;
   color: #334155;
+}
+
+.inline-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.inline-form input {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  min-width: 160px;
+}
+
+.inline-form button {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 16px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.form-grid input {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.toggle input {
+  width: 18px;
+  height: 18px;
 }
 
 .controls-grid {
