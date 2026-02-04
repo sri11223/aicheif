@@ -6,6 +6,12 @@ import morgan from "morgan";
 import { healthRouter } from "./routes/health.js";
 import { agentRouter } from "./routes/agents.js";
 import { negotiationRouter } from "./routes/negotiation.js";
+import { userRouter } from "./routes/users.js";
+import { recommendationRouter } from "./routes/recommendations.js";
+import { constraintRouter } from "./routes/constraints.js";
+import { planRouter } from "./routes/plans.js";
+import { orchestrationRouter } from "./routes/orchestration.js";
+import { dashboardRouter } from "./routes/dashboard.js";
 
 dotenv.config();
 
@@ -20,6 +26,12 @@ app.use(morgan("combined"));
 app.use("/api/health", healthRouter);
 app.use("/api/agents", agentRouter);
 app.use("/api/negotiations", negotiationRouter);
+app.use("/api/users", userRouter);
+app.use("/api/recommendations", recommendationRouter);
+app.use("/api/constraints", constraintRouter);
+app.use("/api/plans", planRouter);
+app.use("/api/orchestration", orchestrationRouter);
+app.use("/api/dashboard", dashboardRouter);
 
 app.use((req, res) => {
   res.status(404).json({ error: "not_found", message: "Route not found" });

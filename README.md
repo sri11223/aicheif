@@ -23,5 +23,6 @@ npm run dev
 ## Documentation
 - [Architecture Overview](docs/architecture.md)
 - [API Contracts](docs/api-contracts.md)
+- [Agent Communication Flow](docs/communication-flow.md)
 - [Negotiation Scenarios](docs/negotiation-scenarios.md)
 - [Setup Guide](docs/setup.md)

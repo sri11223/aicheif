@@ -15,6 +15,7 @@
 - **Agent registry** lives under `backend/src/agents` and exposes metadata.
 - **Negotiation engine** lives under `backend/src/negotiation` and resolves conflicts.
 - **Routes** under `backend/src/routes` handle validation and request lifecycle.
+- **Dashboard API** aggregates schedule, finance, learning, health, and communications data.
 
 ## Reliability & Observability
 - Input validation via Zod at each API boundary.
